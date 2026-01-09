@@ -1,5 +1,4 @@
-fastapi
-uvicorn[standard]
+fastapi[standard]
 sqlmodel            # ORM
 psycopg2-binary     # postgreDriver
 pandas              # for reading csv
