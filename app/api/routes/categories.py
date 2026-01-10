@@ -37,7 +37,7 @@ async def update_category(category_id: str, category_data: Category, session: Se
 async def delete_category(category_id: int, session: SessionDep):
     category = session.get(Category, category_id)
     if not category:
-        raise HTTPException(status_code=404, detail="Categoria Not Found")
+        raise HTTPException(status_code=404, detail="Category Not Found")
     session.delete(category)
     session.commit()
     return {"message": "Category Deleted"}
