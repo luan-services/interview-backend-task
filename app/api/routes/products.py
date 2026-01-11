@@ -15,7 +15,7 @@ router = APIRouter(prefix="/products", tags=["products"])
 # response_model is the same as a 'schema' for the response on the db, it ensures the responses are exactly an Product object
 
 @router.get("/", response_model=List[Product])
-async def read_products(session: SessionDep, category_id: int | None, brand: str | None, min_price: float | None, max_price: float | None):
+async def read_products(session: SessionDep, category_id: int = None | None, brand: str | None  = None, min_price: float | None  = None, max_price: float | None  = None):
     query = select(Product)
 
     if category_id:
