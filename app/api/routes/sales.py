@@ -15,7 +15,7 @@ router = APIRouter(prefix="/sales", tags=["sales"])
 # response_model is the same as a 'schema' for the response on the db, it ensures the responses are exactly an Sale object
 
 @router.get("/", response_model=List[Sale])
-async def read_sales(session: SessionDep, product_id: int  = None | None, start_date: date | None  = None, end_date: date | None  = None):
+async def read_sales(session: SessionDep, product_id: int | None = None, start_date: date | None = None, end_date: date | None  = None):
     query = select(Sale)
 
     if product_id:
