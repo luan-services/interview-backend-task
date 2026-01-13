@@ -28,7 +28,7 @@ cd apollo-solutions-backend-task
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\activate
+.venv\Scripts\activate
 
 ```
 É recomendável usar um ambiente virtual para isolar as dependências. Rode os comandos na mesma pasta que o projeto foi clonado. A estrutura deve ser:
@@ -36,6 +36,13 @@ python -m venv .venv
 ```
 > .venv
 > app
+```
+
+Nota: Dependendo da versão do python instalado, o caminho para ativar o .venv pode ser:
+
+```powershell
+.venv\bin\activate
+
 ```
 
 ### 3. Instalar Dependências
@@ -139,3 +146,4 @@ Os mesmos métodos se aplicam para `/categories` e `/sales`.
 
 
 ```
+
