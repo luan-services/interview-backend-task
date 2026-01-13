@@ -19,23 +19,23 @@ API RESTful desenvolvida com **FastAPI** e **SQLModel**, utilizando um container
 
 ```bash
 git clone https://github.com/luan-services/apollo-solutions-backend-task.git
-
+cd apollo-solutions-backend-task
 ```
 
 ### 2. Criar e Ativar o Ambiente Virtual (.venv)
 
-É recomendável usar um ambiente virtual para isolar as dependências. Rode os comandos na mesma pasta que o projeto foi clonado. A estrutura deve ser:
-```
-> .venv
-> app
-```
-
-**No Windows:**
+**No Windows**
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\activate
 
+```
+É recomendável usar um ambiente virtual para isolar as dependências. Rode os comandos na mesma pasta que o projeto foi clonado. A estrutura deve ser:
+
+```
+> .venv
+> app
 ```
 
 ### 3. Instalar Dependências
@@ -136,5 +136,6 @@ Os mesmos métodos se aplicam para `/categories` e `/sales`.
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+
 
 ```
