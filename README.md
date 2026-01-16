@@ -1,4 +1,4 @@
-# Apollo Solutions Backend API
+# Interview Backend API
 
 API RESTful desenvolvida com **FastAPI** e **SQLModel**, utilizando um container em Docker com banco de dados PostgreSQL para gerenciamento de dados de vendas.
 
@@ -18,8 +18,8 @@ API RESTful desenvolvida com **FastAPI** e **SQLModel**, utilizando um container
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/luan-services/apollo-solutions-backend-task.git
-cd apollo-solutions-backend-task
+git clone https://github.com/luan-services/interview-backend-task.git
+cd interview-backend-task
 ```
 
 ### 2. Criar e Ativar o Ambiente Virtual (.venv)
@@ -146,4 +146,5 @@ Os mesmos métodos se aplicam para `/categories` e `/sales`.
 
 
 ```
+
 
